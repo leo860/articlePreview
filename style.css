@@ -1,0 +1,266 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "Manrope", sans-serif;
+	font-size: 13px;
+}
+body{
+	height: 100vh;
+	background-color: hsl(210, 46%, 95%);
+}
+.container{
+	display: flex;
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	align-items: center;
+}
+.background{
+	height: 45%;
+	width: 40%;
+}
+.background img{
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px 0 0 10px ;
+
+}
+.description{
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+	height: 45%;
+	width: 60%;
+	background-color: white;
+	padding: 40px 50px;
+	border-radius: 0 10px 10px 0;
+}
+.text1{
+color:hsl(217, 19%, 35%);
+font-weight: 700;
+font-size: 26px;
+}
+.text2{
+color:hsl(214, 17%, 51%);
+font-weight: 500;
+font-size: 12px;
+}
+#login{
+	display: flex;
+	align-items: center;
+}
+#perfil{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#perfil img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.information{
+	padding-left: 15px;
+}
+.name{
+color:hsl(217, 19%, 35%);
+font-weight: 700;
+}
+.date{
+color:hsl(212, 23%, 69%);
+font-weight: 500;	
+}
+button{
+	border: none;
+	padding: 8px;
+	border-radius: 50%;
+}
+.share{
+	position: relative;
+}
+.menu-share{
+	visibility: hidden;
+	display: flex;
+	bottom: 75px;
+	width: 560%;
+	left: -80px;
+	position: absolute;
+	color:hsl(212, 23%, 69%);
+	padding: 20px;
+	border-radius: 10px;
+	gap: 20px;
+	background-color: hsl(217, 19%, 35%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(width<1300px){
+ #perfil{
+ 	padding: 20px 10px ;
+ 	background-color: white;
+ 	border-radius: 0 0 20px 20px;
+ 	}
+ 	.text1{
+	color:hsl(217, 19%, 35%);
+	font-weight: 700;
+	font-size: 20px;
+	}
+	.text2{
+	color:hsl(214, 17%, 51%);
+	font-weight: 500;
+	font-size: 14px
+	}
+}
+ @media(width<1100px){ 	body{
+ 	.container{
+	display: flex;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	align-items: center;
+	}
+	.description{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+	height: 55%;
+	width: 60%;
+	background-color: white;
+	padding: 48px 50px;
+	border-radius: 0 10px 10px 0;
+	}
+	.text1{
+	color:hsl(217, 19%, 35%);
+	font-weight: 700;
+	font-size: 20px;
+	}
+	.text2{
+	color:hsl(214, 17%, 51%);
+	font-weight: 500;
+	font-size: 14px
+	}
+	.background{
+	height: 55%;
+	width: 40%;
+	}
+ }
+ @media(width<850px){
+ 	.container{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	}
+	.background{
+	height: 30%;
+	width: 70%;
+	}
+	.background img{
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px 10px 0 0 ;
+	}
+	.description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+	height: 45%;
+	width: 70%;
+	background-color: white;
+	padding: 15px 48px  ;
+	border-radius: 0 0 10px 10px;
+	}
+	.text1{
+	color:hsl(217, 19%, 35%);
+	font-weight: 700;
+	font-size: 20px;
+	}
+	.text2{
+	color:hsl(214, 17%, 51%);
+	font-weight: 500;
+	font-size: 16px;
+	}
+} 	
+@media(width<480px){
+	.container{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	}
+	.background{
+	height: 30%;
+	width: 100%;
+	}
+	.background img{
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px 10px 0 0 ;
+	}
+	.description{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	height: 40%;
+	width: 100%;
+	background-color: white;
+	padding: 15px 35px 0 ;
+	border-radius: 0 0 10px 10px;
+	}
+	.text1{
+	color:hsl(217, 19%, 35%);
+	font-weight: 700;
+	font-size: 16px;
+	}
+	.text2{
+	color:hsl(214, 17%, 51%);
+	font-weight: 500;
+	font-size: 13px;
+	}
+	.menu-share{
+	box-sizing: border-box;
+	visibility: hidden;
+	display: flex;
+	bottom: -25px;
+	width: 337px;
+	left: -261px;
+	position: absolute;
+	color:hsl(212, 23%, 69%);
+	padding: 20px;
+	border-radius: 0 0 10px 10px;
+	gap: 20px;
+	background-color: hsl(217, 19%, 35%);
+	}
+	button{
+	border: none;
+	padding: 8px;
+	border-radius: 50%;
+	}
+}
